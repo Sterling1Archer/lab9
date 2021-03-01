@@ -1,0 +1,7 @@
+https://github.com/Sterling1Archer/lab9.git
+
+The servo motors worked on the Pi, but the standard library wasn't sending out the pulses accurately and caused the motors to pulsate when they where supposed to be stationary.
+
+Using the Arduino to control the motors gave much better control and they didn't pulsate while stationary.
+
+To get both devices to talk to eachother I created my own protocol where the Arduino would be expecting the first byte to be the motor ID and the second byte the position of the motor. By using an IF statement I was able to tell which motor to change by controlling a slider on the Raspberry Pi.
